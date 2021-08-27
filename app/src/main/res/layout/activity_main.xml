@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_primo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAbrirFibonacci"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="96dp"
+        android:text="Fibonacci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirFatorial" />
+
+    <Button
+        android:id="@+id/btnAbrirFatorial"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="13dp"
+        android:text="Fatorial"
+        app:layout_constraintBottom_toTopOf="@+id/btnAbrirFibonacci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_numeroprimo"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="211dp"
+        android:text="Número Primo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirFibonacci"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="313dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="49dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="MENU PRINCIPAL"
+        android:textAlignment="center"
+        android:textColor="#020100"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-200dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+</androidx.constraintlayout.widget.ConstraintLayout>
