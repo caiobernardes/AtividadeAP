@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class TelaFatorial extends AppCompatActivity {
-    Button botaoVoltarFatorial, botaoVerificarFatorial;
+    Button botaoVerificarFatorial;
     EditText editVerificaFatorial;
     TextView txtResultadoFatorial;
 
@@ -19,19 +19,11 @@ public class TelaFatorial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_fatorial);
 
-        botaoVoltarFatorial = findViewById(R.id.VoltarFatorial);
+
         botaoVerificarFatorial = findViewById(R.id.btn_CalcularFatorial);
         editVerificaFatorial = findViewById(R.id.editCalcularFatorial);
         txtResultadoFatorial = findViewById(R.id.txtResultadoFatorial);
 
-        botaoVoltarFatorial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent voltarFatorial=new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(voltarFatorial);
-            }
-        });
     }
 
     public void calcularFatorial(View view){

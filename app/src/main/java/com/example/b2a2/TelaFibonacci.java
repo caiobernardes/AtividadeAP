@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TelaFibonacci extends AppCompatActivity {
-    Button botaoVoltarFibonacci, botaoVerificarFatorial;
     EditText editVerificarFibonacci;
     TextView txtResultadoFibonacci;
 
@@ -24,18 +23,11 @@ public class TelaFibonacci extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_fibonacci);
 
-        botaoVoltarFibonacci = findViewById(R.id.voltarFibonacci);
+
         editVerificarFibonacci = findViewById(R.id.editCalcularFibonacci);
         txtResultadoFibonacci = findViewById(R.id.txtResultadoFibonacci);
 
-        botaoVoltarFibonacci.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent voltarFibonacci=new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(voltarFibonacci);
-            }
-        });
     }
 
     public void calcularFibonacci(View view){

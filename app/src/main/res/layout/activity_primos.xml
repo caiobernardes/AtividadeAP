@@ -8,54 +8,30 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="313dp"
-        android:layout_height="115dp"
+        android:layout_width="367dp"
+        android:layout_height="193dp"
         android:layout_marginStart="49dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="49dp"
-        android:fontFamily="@font/abril_fatface"
-        android:text="NÚMERO PRIMO"
+        android:fontFamily="sans-serif"
+        android:text="Descubra se um número é primo ou não"
         android:textAlignment="center"
-        android:textColor="#020100"
+        android:textColor="#F44336"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-200dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
-
-    <Button
-        android:id="@+id/bnt_voltarPrimos"
-        android:layout_width="196dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="107dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="65dp"
-        android:text="Voltar ao Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editVerificarPrimos"
-        android:layout_width="249dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="10dp"
+        android:layout_width="247dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="Insira o número:"
+        android:hint="Informe:"
         android:inputType="textPersonName|numberDecimal"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,28 +41,30 @@
         android:id="@+id/btn_VerificarPrimos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="161dp"
         android:backgroundTint="#000000"
         android:onClick="verificar"
-        android:text="Verificar"
+        android:text="PRONTO!"
+        android:textColor="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editVerificarPrimos"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editVerificarPrimos" />
 
     <TextView
         android:id="@+id/txtResultadoPrimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="172dp"
-        android:text="Aguardando..."
+        android:text="Resultado..."
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editVerificarPrimos" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_VerificarPrimos" />
 </androidx.constraintlayout.widget.ConstraintLayout>

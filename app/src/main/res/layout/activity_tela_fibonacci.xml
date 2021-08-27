@@ -11,44 +11,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="141dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="77dp"
         android:layout_marginEnd="142dp"
-        android:layout_marginBottom="101dp"
-        android:text="Aguardando..."
+        android:text="Resultado..."
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/voltarFibonacci"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCalcularFibonacci" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_CacularFibonacci" />
 
     <Button
         android:id="@+id/btn_CacularFibonacci"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="150dp"
         android:backgroundTint="#000000"
         android:onClick="calcularFibonacci"
         android:text="Calcular"
+        android:textColor="#F44336"
+        app:iconTint="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editCalcularFibonacci"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCalcularFibonacci" />
 
     <EditText
         android:id="@+id/editCalcularFibonacci"
-        android:layout_width="249dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="18dp"
+        android:layout_width="258dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="77dp"
         android:ems="10"
         android:hint="Insira o número:"
         android:inputType="textPersonName|numberDecimal"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_CacularFibonacci"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -57,37 +58,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
-        android:fontFamily="@font/abril_fatface"
-        android:text="FIBONACCI"
-        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:text="Sequência Fibonacci"
+        android:textColor="#F44336"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-    <Button
-        android:id="@+id/voltarFibonacci"
-        android:layout_width="196dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="107dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="42dp"
-        android:text="Voltar ao Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
+        tools:layout_editor_absoluteY="143dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

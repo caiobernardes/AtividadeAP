@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ovats/AndroidStudioProjects/APherbert/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/ovats/AndroidStudioProjects/APherbert/app/src/main/res/layout/activity_primos.xml" value="0.22" />
+        <entry key="..\:/Users/ovats/AndroidStudioProjects/APherbert/app/src/main/res/layout/activity_tela_fatorial.xml" value="0.22" />
+        <entry key="..\:/Users/ovats/AndroidStudioProjects/APherbert/app/src/main/res/layout/activity_tela_fibonacci.xml" value="0.22" />
         <entry key="..\:/Users/ovats/AndroidStudioProjects/B2A2/app/src/main/res/layout/activity_fatorial.xml" value="0.2" />
         <entry key="..\:/Users/ovats/AndroidStudioProjects/B2A2/app/src/main/res/layout/activity_fibonacci.xml" value="0.22" />
         <entry key="..\:/Users/ovats/AndroidStudioProjects/B2A2/app/src/main/res/layout/activity_main.xml" value="0.25" />

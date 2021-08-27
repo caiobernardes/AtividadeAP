@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Primos extends AppCompatActivity {
-    Button botaoVoltarPrimos, botaoVerificarPrimos;
+    Button botaoVerificarPrimos;
     EditText editVerificaPrimo;
     TextView txtResultado;
 
@@ -19,19 +19,10 @@ public class Primos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primos);
 
-        botaoVoltarPrimos = findViewById(R.id.bnt_voltarPrimos);
         botaoVerificarPrimos = findViewById(R.id.btn_VerificarPrimos);
         editVerificaPrimo = findViewById(R.id.editVerificarPrimos);
         txtResultado = findViewById(R.id.txtResultadoPrimo);
 
-        botaoVoltarPrimos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent voltarPrimos=new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(voltarPrimos);
-            }
-        });
     }
     public void verificar(View view){
         double numeroVeriicado = Double.parseDouble(editVerificaPrimo.getText().toString());
